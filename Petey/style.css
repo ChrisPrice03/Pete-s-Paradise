@@ -1,4 +1,8 @@
 body {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+     -ms-user-select: none;
+         user-select: none;
     padding-top: 30px;
     font-family: Arial;
     background-color: turquoise;
