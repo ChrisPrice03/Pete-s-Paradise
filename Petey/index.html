@@ -1,55 +1,27 @@
 <html>
     <head>
         <script type="text/javascript" src="sketch.js"></script>
-        <title>Shark Bait's Cookie Clicker Game!</title>
+        <title>Pete's Paradise</title>
         <link rel = "stylesheet" href = "style.css"/>
     </head>
-
+    
     <body style="background-image: url('img/background.png');">
         <div id = "space"></div>
         <div id = "cookie" onclick="cookieClick()">
-            <img src="img/sad.png" width="400px"/>
+            <img id="pete" src="img/sad.png" width="400px"/>
         </div>
         
-        <p>Number of Dinin Dollars:</p>
+        <p>Number of Dining $</p>
         
         <div id = "numbers"></div>
         <div id= "upgradeLevel"></div>
 
-        <p>Intructions: Click the cookie - this makes more cookies.</p>
-        <p>You will AUTOMATICALLY upgrade according the following table of upgrade costs! :)</p>
-
-        <table>
-            <tr>
-                <td>Name</td>
-                <td>How many cookies can it make?</td>
-                <td>cost</td>
-            </tr>
-            
-            <tr>
-                <td>Granny!</td>
-                <td>Granny make 2x's as much!</td>
-                <td>30 cookies!</td>
-            </tr>
-            
-            <tr>
-                <td>Factory</td>
-                <td> Factory makes 10x's as much!</td>
-                <td>500 cookies!</td>
-            </tr>
-            
-            <tr>
-                <td>Plant</td>
-                <td> Plant makes 30x's as much!</td>
-                <td>1,000 cookies!</td>
-            </tr>
-            
-             <tr>
-                <td>SuperPlant</td>
-                <td> SuperFactory makes 1000x's as much!</td>
-                <td>100,000 cookies!</td>
-            </tr>
-
-        </table>
+        <div class="btn-group" style="width:100%">
+            <button style="width:20%; text-align:center" onclick="starShip()">$50 Tarkington</button>
+            <button style="width:20%; text-align:center" onclick="ear()">$200 Earheart</button>
+            <button style="width:20%; text-align:center" onclick="harrison()">$500 Harrison</button>
+            <button style="width:20%; text-align:center" onclick="parker()">$1000 Parker</button>
+            <button style="width:20%; text-align:center" onclick="hillenbrand()">$3000 Hillenbrand</button>
+          </div>
     </body>
 </html>
