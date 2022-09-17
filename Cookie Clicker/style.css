@@ -1,0 +1,65 @@
+body {
+    padding-top: 30px;
+    font-family: Arial;
+    background-color: turquoise;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}                                           
+
+p {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: 5px;
+}
+
+#space {
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    border:5px solid;
+    border-radius:10px;
+    background-color: greenyellow;
+    color: white;
+    width:389px;
+    height:60px;
+}
+
+table {
+    margin-top: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+td {
+    border:1px solid;
+}
+
+#numbers {
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border:5px solid;
+    border-radius:10px;
+    background-color:white;
+    width:200px;
+    height:60px;    
+}
+
+#upgradeLevel {
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border:5px solid;
+    border-radius:10px;
+    background-color:lightpink;
+    width:300px;
+    height:50px;    
+}
