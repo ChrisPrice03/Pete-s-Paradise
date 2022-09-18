@@ -64,8 +64,6 @@ function tark() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/0.25);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS")
     }
 }
 
@@ -76,8 +74,6 @@ function owen() {
        updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/0.5);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
     }
 }
 
@@ -88,8 +84,6 @@ function meredith() {
        updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/1.25);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
     }
 }
 
@@ -100,8 +94,6 @@ function mccutch() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/2.5);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
     }
 }
 
@@ -112,8 +104,6 @@ function ear() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/0.5);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
     }
 
 function shreve() {
@@ -123,8 +113,6 @@ function shreve() {
        updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/10);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
     }
 }
 
@@ -135,8 +123,6 @@ function carry() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/25);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
     }
 }
 
@@ -147,9 +133,7 @@ function harrison() {
        updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/50);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
-    }
+    } 
 }
 
 function hawkins() {
@@ -159,8 +143,6 @@ function hawkins() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/100);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
     }
 }
 
@@ -171,9 +153,7 @@ function honors() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/250);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
-    }
+    } 
 }
 
 function windsor() {
@@ -183,9 +163,7 @@ function windsor() {
         updateDps();
       cookieClick();
       setInterval(cookieClick, 1000/500);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
-    }
+    } 
 }
 
 function parker() {
@@ -195,9 +173,7 @@ function parker() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/1000);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
-    }
+    } 
 }
 
 function hillenbrand() {
@@ -207,9 +183,7 @@ function hillenbrand() {
        updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/5000);
-    } else {
-        alert("YOU DONT HAVE MONEY FOR THIS");
-    }
+    } 
     
 }
 
