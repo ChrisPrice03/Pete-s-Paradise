@@ -110,7 +110,7 @@ td {
     transform: translateY(4px);
   }
 
-#chad {
+.chad {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -118,10 +118,14 @@ td {
     overflow: hidden;
     outline: none;
     hidden
+    }
+
+  .chad:active {
+    transform: translateY(4px);
   }
 
-  #chad:hover {}
-
-  #chad:active {
-    transform: translateY(4px);
-}
+  #starship {
+    position:absolute;
+    top: 400px;
+    left: 700px;
+  }

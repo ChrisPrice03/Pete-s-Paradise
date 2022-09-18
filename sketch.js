@@ -1,3 +1,4 @@
+
 //initial number of cookies    
 var num = 0; //curent money
 var score = 1; 
@@ -26,6 +27,7 @@ var professorCost = 1000000;
 var randNum;
     //prestige results
 var prestigeResult = "";
+var inp = prompt("Please enter DD amount: ");
 window.onload = function () {
         setInterval(updatenum, 10);
         setInterval(randomEvents(), 30000); 
@@ -38,7 +40,11 @@ function cookieClick() {
     num = num + score;
     var numbers = document.getElementById("numbers");
      numbers.innerHTML = num;
-     getPicture();        
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
 }
 
 function updatenum() {
@@ -174,11 +180,11 @@ function updateDpsBoost() {
 }
 
 function updatePrestigeCost(){
-    associatesCost += 0.9(dpsMult);
-    bachelorsCost += 0.9(dpsMult);
-    mastersCost += 0.9(dpsMult);
-    PhDCost += 0.9(dpsMult);
-    ProfessorCost += 0.9(dpsMult);
+    associatesCost = associatesCost + 0.9 * (dpsMult);
+    bachelorsCost = bachelorsCost + 0.9 * (dpsMult);
+    mastersCost = mastersCost + 0.9 * (dpsMult);
+    PhDCost = PhDCost + 0.9 * (dpsMult);
+    professorCost = professorCost + 0.9 * (dpsMult);
 }
 
 function gainAssociatesDegree() {
@@ -298,11 +304,14 @@ callRandomEvent();
 function callRandomEvent() {
 
    if (randNum < .033) {
-   // call starship
+    
+    document.getElementById("starship").hidden = false;
    }else if(randNum < .066) {
-   // call daddy daniels
+
+    document.getElementById("daniels").hidden = false;
    }else if(randNum < 0.1){
-   // call IU Sucks 
+    
+    document.getElementById("iusuck").hidden = false;
    }
 }
 
@@ -389,4 +398,10 @@ setInterval(function() {
 
 // <button onclick="saveGame()">Save Game</button>
 
+
+//rules
+Welcome to Pete's Paradise!
+Click on Pete's face to begin earning dining dollars! Dining dollars can be used to buy dorms and gain Purdue victories to improve your money making ability. Your goal is
+to pay off your college tuition and get your degree! Click the 'Check Prestige' button to see which degree you can get and the 'Prestige' button to cash out and earn your
+degree. Degrees will reset all of your stats except for your multipliers to aid you in earning your next degree. Now begin by clicking 'Ok' and begin earning your degree!
 */
