@@ -375,6 +375,10 @@ window.onload = function() {
 
 };
 
+window.onbeforeunload = function() {
+                savegame();
+            }
+
 setInterval(function() {
 
     saveGame();
