@@ -31,6 +31,14 @@ var inp = prompt("Please enter DD amount: ");
 window.onload = function () {
         setInterval(updatenum, 10);
         setInterval(randomEvents(), 30000); 
+        setInterval(function() {
+            document.getElementById("assno").innerHTML = numAssociatesDegree;
+        document.getElementById("bachno").innerHTML = numBachelorsDegree;
+        document.getElementById("masterno").innerHTML = numAMastersDegree;
+        document.getElementById("phdno").innerHTML = numPhD;
+        document.getElementById("proffno").innerHTML = numProfessors;
+        }, 1000);
+        
 }
 
 var cookie = document.getElementById("cookie");
@@ -264,8 +272,6 @@ function prestigecheck() {
 }
 
 function prestige() {
-    num = 0;
-    dps = 0;
     if (num > associatesCost) {
         if (num > bachelorsCost) {
             if (num > mastersCost) {
@@ -287,6 +293,13 @@ function prestige() {
     } else {
         console.log("BRUHHHH");
     }
+    num = 0;
+    dps = 0;
+    document.getElementById("assno") = numAssociatesDegree;
+    document.getElementById("bachno") = numBachelorsDegree;
+    document.getElementById("masterno") = numAMastersDegree;
+    document.getElementById("phdno") = numPhD;
+    document.getElementById("proffno") = numProfessors;
     }
 
 //finding the picture
