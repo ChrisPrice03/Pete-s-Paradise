@@ -1,8 +1,31 @@
+html { 
+    background: url('img/background.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+  }
+
+#col2 {
+    padding-left: 50px;
+}
 body {
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-     -ms-user-select: none;
-         user-select: none;
+    background: url('img/background.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding-top: 30px;
     font-family: Arial;
     background-color: turquoise;
@@ -68,22 +91,26 @@ td {
     height:50px;    
 }
 
-
-.btn-group button {
-    background-color: #04AA6D; /* Green background */
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 10px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
+button {
+    width: 249px;
+    height: 50px;
+    margin-bottom: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+    background-color: #e2c836;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(26, 20, 20);
   }
   
-  .btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-  }
-
+  button:hover {background-color: #dab72c}
   
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color: #3e8e41;
+  button:active {
+    background-color: #c7ab21;
+    box-shadow: 0 5px #000;
+    transform: translateY(4px);
   }
