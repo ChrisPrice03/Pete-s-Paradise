@@ -120,7 +120,7 @@ td {
     hidden
   }
 
-  #chad:hover {background-color: #dab72c}
+  #chad:hover {}
 
   #chad:active {
     transform: translateY(4px);
