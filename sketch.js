@@ -343,10 +343,23 @@ function callRandomEvent() {
     document.getElementById("daniels").hidden = false;
    }else if(randNum < 0.1){
     
-    document.getElementById("iusuck").hidden = false;
+    document.getElementById("iusucks").hidden = false;
    }
 }
 
+function clickstar() {
+    num = 2* num;
+    document.getElementById("starship").hidden = true;
+
+}
+function clickdanny() {
+    num = 2* num;
+    document.getElementById("daniels").hidden = true;
+}
+function clickiu() {
+    num = 2* num;
+    document.getElementById("iusucks").hidden = true;
+}
 
 /*
 
