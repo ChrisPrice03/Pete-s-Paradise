@@ -16,7 +16,7 @@ var PhDBoost = 400;
 var professorBoost = 1000;
     //initiates Dps mult
 var dpsMult = 1;
-var dps = 0; // dollars per seconds
+var dpsNoMult = 0; // dollars per seconds
     //base prestige costs
 var associatesCost = 50000;
 var bachelorsCost = 100000;
@@ -49,7 +49,8 @@ function updatenum() {
 function tark() {
     if(num >= 20){
         num = num-20;
-        dps = dps + 0.25;
+        dpsNoMult = dpsNoMult + 0.25;
+        updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/0.25);
     }
@@ -58,7 +59,8 @@ function tark() {
 function owen() {
     if(num >= 50){
         num = num-50;
-       dps = dps +0.5;
+       dpsNoMult = dpsNoMult +0.5;
+       updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/0.5);
     }
@@ -67,7 +69,8 @@ function owen() {
 function meredith() {
     if(num >= 250){
         num = num - 250;
-       dps = dps +1.25;
+       dpsNoMult = dpsNoMult +1.25;
+       updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/1.25);
     }
@@ -76,7 +79,8 @@ function meredith() {
 function mccutch() {
     if(num >= 500){
         num = num-500;
-        dps = dps + 2.5;
+        dpsNoMult = dpsNoMult + 2.5;
+        updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/2.5);
     }
@@ -85,7 +89,8 @@ function mccutch() {
 function ear() {
     if(num >= 1250){
         num = num-1250;
-        dps = dps + 0.5;
+        dpsNoMult = dpsNoMult + 0.5;
+        updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/0.5);
     }
@@ -94,7 +99,8 @@ function ear() {
 function shreve() {
     if(num >= 5000){
         num = num - 5000;
-       dps = dps + 10;
+       dpsNoMult = dpsNoMult + 10;
+       updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/10);
     }
@@ -103,7 +109,8 @@ function shreve() {
 function carry() {
     if(num >= 12500){
         num = num - 12500;
-        dps = dps + 25;
+        dpsNoMult = dpsNoMult + 25;
+        updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/25);
     }
@@ -112,7 +119,8 @@ function carry() {
 function harrison() {
     if(num >= 40000){
         num = num-40000;
-       dps = dps + 50;
+       dpsNoMult = dpsNoMult + 50;
+       updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/50);
     }
@@ -121,7 +129,8 @@ function harrison() {
 function hawkins() {
     if(num >= 100000){
         num = num-100000;
-        dps = dps + 100;
+        dpsNoMult = dpsNoMult + 100;
+        updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/100);
     }
@@ -130,7 +139,8 @@ function hawkins() {
 function honors() {
     if(num >= 300000){
         num = num-300000;
-        dps = dps + 250;
+        dpsNoMult = dpsNoMult + 250;
+        updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/250);
     }
@@ -139,7 +149,8 @@ function honors() {
 function windsor() {
     if(num >= 750000){
         num = num-750000;
-      dps = dps + 500;
+      dpsNoMult = dpsNoMult + 500;
+        updateDps();
       cookieClick();
       setInterval(cookieClick, 1000/500);
     }
@@ -148,7 +159,8 @@ function windsor() {
 function parker() {
     if(num >= 2000000){
         num = num-2000000;
-        dps = dps + 1000;
+        dpsNoMult = dpsNoMult + 1000;
+        updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/1000);
     }
@@ -157,11 +169,16 @@ function parker() {
 function hillenbrand() {
     if(num >= 10000000){
         num = num-10000000;
-       dps = dps + 5000;
+       dpsNoMult = dpsNoMult + 5000;
+       updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/5000);
     }
     
+}
+
+function updateDps() {
+    dps = dpsNoMult * dpsMult;
 }
 
 
@@ -262,7 +279,9 @@ function prestige() {
     } else {
         console.log("BRUHHHH");
     }
-}
+    num = 0;
+    dps = 0;
+    }
 
 //finding the picture
 function getPicture() {
