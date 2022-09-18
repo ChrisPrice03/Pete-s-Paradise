@@ -27,14 +27,17 @@ var professorCost = 1000000;
 var randNum;
     //prestige results
 var prestigeResult = "";
+//var inp = prompt("Please enter DD amount: ");
 window.onload = function () {
         setInterval(updatenum, 10);
         setInterval(randomEvents(), 30000); 
-        document.getElementById("assno").innerHTML = toString(numAssociatesDegree);
-        document.getElementById("bachno").innerHTML = toString(numBachelorsDegree);
-        document.getElementById("masterno").innerHTML = toString(numAMastersDegree);
-        document.getElementById("phdno").innerHTML = toString(numPhD);
-        document.getElementById("proffno").innerHTML = toString(numProfessors);
+        setInterval(function() {
+            document.getElementById("assno").innerHTML = numAssociatesDegree;
+        document.getElementById("bachno").innerHTML = numBachelorsDegree;
+        document.getElementById("masterno").innerHTML = numAMastersDegree;
+        document.getElementById("phdno").innerHTML = numPhD;
+        document.getElementById("proffno").innerHTML = numProfessors;
+        }, 1000);
         
 }
 
@@ -46,10 +49,10 @@ function cookieClick() {
     var numbers = document.getElementById("numbers");
      numbers.innerHTML = num;
      getPicture();
-    if (inp) {
-        num = parseInt(inp);
-        inp = null;
-    }
+    //if (inp) {
+    //    num = parseInt(inp);
+    //    inp = null;
+    //}
 }
 
 function updatenum() {
@@ -105,6 +108,7 @@ function ear() {
         cookieClick();
         setInterval(cookieClick, 1000/0.5);
     }
+}
 
 function shreve() {
     if(num >= 5000){
@@ -133,7 +137,7 @@ function harrison() {
        updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/50);
-    } 
+    }
 }
 
 function hawkins() {
@@ -153,7 +157,7 @@ function honors() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/250);
-    } 
+    }
 }
 
 function windsor() {
@@ -163,7 +167,7 @@ function windsor() {
         updateDps();
       cookieClick();
       setInterval(cookieClick, 1000/500);
-    } 
+    }
 }
 
 function parker() {
@@ -173,7 +177,7 @@ function parker() {
         updateDps();
         cookieClick();
         setInterval(cookieClick, 1000/1000);
-    } 
+    }
 }
 
 function hillenbrand() {
@@ -183,7 +187,7 @@ function hillenbrand() {
        updateDps();
        cookieClick();
        setInterval(cookieClick, 1000/5000);
-    } 
+    }
     
 }
 
@@ -342,4 +346,95 @@ function callRandomEvent() {
     document.getElementById("iusuck").hidden = false;
    }
 }
+
+
+/*
+
+
+function loadGame() {
+    
+    var savedGame = JSON.parse(localStorage.getItem("gameSave"));
+    if (typeOf (savedGame.score != "undefined")) num = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) score = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) totalBoost = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) numAssociatesDegree = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) numBachelorsDegree = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) numAMastersDegree = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) numPhD = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) numProfessors = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) associatesBoost = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) bachelorsBoost = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) mastersBoost = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) PhDBoost = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) professorBoost = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) dpsMult = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) dps = savedGame.score;
+    if (typeOf (savedGame.score != "undefined")) associatesCost = savedGame.score;  
+    if (typeOf (savedGame.score != "undefined")) bachelorsCost = savedGame.score; 
+    if (typeOf (savedGame.score != "undefined")) mastersCost = savedGame.score; 
+    if (typeOf (savedGame.score != "undefined")) PhDCost = savedGame.score; 
+    if (typeOf (savedGame.score != "undefined")) professorCost = savedGame.score; 
+    if (typeOf (savedGame.score != "undefined")) prestigeResult = savedGame.score; 
+    if (typeOf (savedGame.score != "undefined")) randNum = savedGame.score;
+
 }
+
+
+
+
+function saveGame() {
+var gameSave = {
+num: num,
+score: score,
+totalBoost: totalBoost,
+numAssociatesDegree: numAssociatesDegree,
+numBachelorsDegree: numBachelorsDegree,
+numAMastersDegree: numAMastersDegree,
+numPhD: numPhD,
+numProfessors: numProfessors,
+associatesBoost: associatesBoost,
+bachelorsBoost: bachelorsBoost,
+mastersBoost: mastersBoost,
+PhDBoost: PhDBoost,
+professorBoost: professorBoost,
+dpsMult: dpsMult,
+dps: dps,
+associatesCost: associatesCost,
+bachelorsCost: bachelorsCost,
+mastersCost: mastersCost,
+PhDCost: PhDCost,
+professorCost: professorCost,
+prestigeResult: prestigeResult,
+randNum: randNum,
+};
+localStorage.setItem("gameSave", JSON.stringify(gameSave));
+}
+
+window.onload = function() {
+
+    loadGame();
+
+};
+
+window.onbeforeunload = function() {
+                savegame();
+            }
+
+setInterval(function() {
+
+    saveGame();
+}, 30000); // 30,000ms is 30 seconds; saves game every 30 seconds
+
+
+
+
+// <button onclick="saveGame()">Save Game</button>
+
+<<<<<<< HEAD
+
+//rules
+Welcome to Pete's Paradise!
+Click on Pete's face to begin earning dining dollars! Dining dollars can be used to buy dorms and gain Purdue victories to improve your money making ability. Your goal is
+to pay off your college tuition and get your degree! Click the 'Check Prestige' button to see which degree you can get and the 'Prestige' button to cash out and earn your
+degree. Degrees will reset all of your stats except for your multipliers to aid you in earning your next degree. Now begin by clicking 'Ok' and begin earning your degree!
+*/
