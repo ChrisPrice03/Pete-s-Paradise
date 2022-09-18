@@ -16,6 +16,7 @@ var mastersBoost = 200;
 var PhDBoost = 400;
 var professorBoost = 1000;
     //initiates Dps mult
+var dps = 0;
 var dpsMult = 1;
 var dpsNoMult = 0; // dollars per seconds
     //base prestige costs
@@ -48,6 +49,9 @@ function cookieClick() {
     num = num + score;
     var numbers = document.getElementById("numbers");
      numbers.innerHTML = num;
+
+     var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
      getPicture();
     //if (inp) {
     //    num = parseInt(inp);
