@@ -38,6 +38,7 @@ window.onload = function () {
         document.getElementById("masterno").innerHTML = numAMastersDegree;
         document.getElementById("phdno").innerHTML = numPhD;
         document.getElementById("proffno").innerHTML = numProfessors;
+        document.getElementById("multip").innerHTML = dpsMult * 100 - 100;
         }, 1000);
         
 }
