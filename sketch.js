@@ -258,6 +258,8 @@ function prestigecheck() {
 }
 
 function prestige() {
+    num = 0;
+    dps = 0;
     if (num > associatesCost) {
         if (num > bachelorsCost) {
             if (num > mastersCost) {
@@ -279,8 +281,6 @@ function prestige() {
     } else {
         console.log("BRUHHHH");
     }
-    num = 0;
-    dps = 0;
     }
 
 //finding the picture
