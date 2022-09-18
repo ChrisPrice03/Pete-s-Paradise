@@ -28,7 +28,7 @@ var professorCost = 1000000;
 var randNum;
     //prestige results
 var prestigeResult = "";
-//var inp = prompt("Please enter DD amount: ");
+var inp = prompt("Please enter DD amount: ");
 window.onload = function () {
         setInterval(updatenum, 10);
         setInterval(randomEvents(), 30000); 
@@ -54,10 +54,10 @@ function cookieClick() {
      var dollps = document.getElementById("dpsps");
      dollps.innerHTML = dps;
      getPicture();
-    //if (inp) {
-    //    num = parseInt(inp);
-    //    inp = null;
-    //}
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
 }
 
 function updatenum() {
