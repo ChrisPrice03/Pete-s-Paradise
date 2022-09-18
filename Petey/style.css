@@ -7,7 +7,10 @@ html {
 }
 
 
-h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+h1 { color: #ffffff; font-family: 'Trebuchet MS', sans-serif; font-size: 60px; line-height: 100px; font-weight: normal; margin-bottom: 0px; margin-top: 0px; text-align: center;text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+h3 {color: #ffffff; font-family: 'Trebuchet MS', sans-serif; font-size: 30px; line-height: 50px; font-weight: normal; margin-bottom: 0px; margin-top: 0px; text-align: center;text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px; }
 
 .row {
     display: flex;
@@ -19,6 +22,10 @@ h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-we
 
 #col2 {
     padding-left: 50px;
+}
+
+#col3 {
+    padding-left: 30px;
 }
 body {
     background: url('img/background.jpeg') no-repeat center center fixed; 
@@ -65,18 +72,6 @@ td {
     border:1px solid;
 }
 
-#numbers {
-    margin: auto;
-    text-align:center;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    border:5px solid;
-    border-radius:10px;
-    background-color:white;
-    width:200px;
-    height:60px;    
-}
 
 #upgradeLevel {
     margin: auto;
@@ -91,7 +86,7 @@ td {
     height:50px;    
 }
 
-button {
+.button {
     width: 249px;
     height: 50px;
     margin-bottom: 12px;
@@ -107,10 +102,26 @@ button {
     box-shadow: 0 9px rgb(26, 20, 20);
   }
   
-  button:hover {background-color: #dab72c}
+  .button:hover {background-color: #dab72c}
   
-  button:active {
+  .button:active {
     background-color: #c7ab21;
     box-shadow: 0 5px #000;
     transform: translateY(4px);
   }
+
+#chad {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    hidden
+  }
+
+  #chad:hover {background-color: #dab72c}
+
+  #chad:active {
+    transform: translateY(4px);
+}
