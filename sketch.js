@@ -1,6 +1,6 @@
 
 //initial number of cookies    
-var num = 0; //curent money
+var num = 10000000000; //curent money
 var score = 1; 
     //stats variables
 var totalBoost = 0; 
@@ -31,7 +31,7 @@ var prestigeResult = "";
 var inp = 0; // = prompt("Please enter DD amount: ");
 window.onload = function () {
         setInterval(updatenum, 10);
-        setInterval(randomEvents(), 30000); 
+        setInterval(randomEvents, 30000); 
         setInterval(function() {
             document.getElementById("assno").innerHTML = numAssociatesDegree;
         document.getElementById("bachno").innerHTML = numBachelorsDegree;
@@ -60,28 +60,225 @@ function cookieClick() {
     }
 }
 
+function tarkBought() { 
+
+    num = num + 0.25 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function owenBought() { 
+
+    num = num + 0.5 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function meridithBought() { 
+
+    num = num + 1.25 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function mccutcheonBought() { 
+
+    num = num + 2.5 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function earhartBought() { 
+
+    num = num + 5 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function shreveBought() { 
+
+    num = num + 10 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function carryBought() { 
+
+    num = num + 25 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function harrisonBought() { 
+
+    num = num + 50 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function hawkinsBought() { 
+
+    num = num + 100 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function HonorsBought() { 
+
+    num = num + 250 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function windsorBought() { 
+
+    num = num + 500 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function parkerBought() { 
+
+    num = num + 1000 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
+function hillenbrandBought() { 
+
+    num = num + 5000 * dpsMult;
+   var numbers = document.getElementById("numbers");
+     numbers.innerHTML = num;
+
+    var dollps = document.getElementById("dpsps");
+     dollps.innerHTML = dps;
+     getPicture();
+    if (inp) {
+        num = parseInt(inp);
+        inp = null;
+    }
+}
+
 function updatenum() {
     var numbers = document.getElementById("numbers");
     numbers.innerHTML = num;
 }
 
+var arr = [];
+
 function tark() {
     if(num >= 20){
-        num = num-20;
+        num = num - 21;
         dpsNoMult = dpsNoMult + 0.25;
         updateDps();
         cookieClick();
-        setInterval(cookieClick, 1000/0.25);
+        arr.push(setInterval(tarkBought, 1000));
     }
 }
 
 function owen() {
     if(num >= 50){
-        num = num-50;
-       dpsNoMult = dpsNoMult +0.5;
+        num = num - 50;
+       dpsNoMult = dpsNoMult + 0.5;
        updateDps();
        cookieClick();
-       setInterval(cookieClick, 1000/0.5);
+       arr.push(setInterval(owenBought, 1000));
     }
 }
 
@@ -91,7 +288,7 @@ function meredith() {
        dpsNoMult = dpsNoMult +1.25;
        updateDps();
        cookieClick();
-       setInterval(cookieClick, 1000/1.25);
+       arr.push(setInterval(meridithBought, 1000));
     }
 }
 
@@ -101,17 +298,17 @@ function mccutch() {
         dpsNoMult = dpsNoMult + 2.5;
         updateDps();
         cookieClick();
-        setInterval(cookieClick, 1000/2.5);
+        arr.push(setInterval(mccutcheonBought, 1000));    
     }
 }
 
 function ear() {
     if(num >= 1250){
         num = num-1250;
-        dpsNoMult = dpsNoMult + 0.5;
+        dpsNoMult = dpsNoMult + 5;
         updateDps();
         cookieClick();
-        setInterval(cookieClick, 1000/0.5);
+        arr.push(setInterval(earhartBought, 1000));
     }
 }
 
@@ -121,7 +318,7 @@ function shreve() {
        dpsNoMult = dpsNoMult + 10;
        updateDps();
        cookieClick();
-       setInterval(cookieClick, 1000/10);
+       arr.push(setInterval(shreveBought, 1000));    
     }
 }
 
@@ -131,7 +328,7 @@ function carry() {
         dpsNoMult = dpsNoMult + 25;
         updateDps();
         cookieClick();
-        setInterval(cookieClick, 1000/25);
+        arr.push(setInterval(carryBought, 1000));
     }
 }
 
@@ -141,7 +338,7 @@ function harrison() {
        dpsNoMult = dpsNoMult + 50;
        updateDps();
        cookieClick();
-       setInterval(cookieClick, 1000/50);
+       arr.push(setInterval(harrisonBought, 1000));
     }
 }
 
@@ -151,7 +348,7 @@ function hawkins() {
         dpsNoMult = dpsNoMult + 100;
         updateDps();
         cookieClick();
-        setInterval(cookieClick, 1000/100);
+        arr.push(setInterval(hawkinsBought, 1000));
     }
 }
 
@@ -161,7 +358,7 @@ function honors() {
         dpsNoMult = dpsNoMult + 250;
         updateDps();
         cookieClick();
-        setInterval(cookieClick, 1000/250);
+        arr.push(setInterval(honorsBought, 1000));
     }
 }
 
@@ -171,7 +368,7 @@ function windsor() {
       dpsNoMult = dpsNoMult + 500;
         updateDps();
       cookieClick();
-      setInterval(cookieClick, 1000/500);
+      arr.push(setInterval(windsorBought, 1000));
     }
 }
 
@@ -181,7 +378,7 @@ function parker() {
         dpsNoMult = dpsNoMult + 1000;
         updateDps();
         cookieClick();
-        setInterval(cookieClick, 1000/1000);
+        arr.push(setInterval(parkerBought, 1000));
     }
 }
 
@@ -191,7 +388,7 @@ function hillenbrand() {
        dpsNoMult = dpsNoMult + 5000;
        updateDps();
        cookieClick();
-       setInterval(cookieClick, 1000/5000);
+       arr.push(setInterval(hillenbrandBought, 1000));
     }
     
 }
@@ -199,7 +396,6 @@ function hillenbrand() {
 function updateDps() {
     dps = dpsNoMult * dpsMult;
 }
-
 
 //Stats and Prestige
 //<ins> button and GUI
@@ -300,6 +496,12 @@ function prestige() {
     }
     num = 0;
     dps = 0;
+    dpsNoMult = 0;
+    arr.map((a) => {
+        console.log(a)
+        clearInterval(a);
+        arr = [];
+      })
     document.getElementById("assno") = numAssociatesDegree;
     document.getElementById("bachno") = numBachelorsDegree;
     document.getElementById("masterno") = numAMastersDegree;
