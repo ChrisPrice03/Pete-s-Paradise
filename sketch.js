@@ -1,6 +1,6 @@
 
 //initial number of cookies    
-var num = 10000000000; //curent money
+var num = 0; //curent money
 var score = 1; 
     //stats variables
 var totalBoost = 0; 
