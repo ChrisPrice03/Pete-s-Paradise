@@ -8,7 +8,7 @@ var numAssociatesDegree = 0;
 var numBachelorsDegree = 0;
 var numAMastersDegree = 0;
 var numPhD = 0;
-var numProfessors = 0;
+var numProfessors = 5;
     //boost per degree declarations
 var associatesBoost = 50;
 var bachelorsBoost = 100;
