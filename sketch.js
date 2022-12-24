@@ -28,7 +28,7 @@ var professorCost = 1000000;
 var randNum;
     //prestige results
 var prestigeResult = "";
-var inp = prompt("Please enter DD amount: "); // = 0;
+var inp = 0; //= prompt("Please enter DD amount: ");
 window.onload = function () {
         setInterval(updatenum, 10);
         setInterval(randomEvents, 30000); 
@@ -494,7 +494,7 @@ function prestige() {
     } else {
         console.log("BRUHHHH");
     }
-    num = prompt("Please enter DD amount: "); // = 0;
+    num = 0;
     dps = 0;
     dpsNoMult = 0;
     arr.map((a) => {
